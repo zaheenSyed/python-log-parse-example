@@ -5,7 +5,7 @@ import re
 line_regex = re.compile(r".*fwd=\"12.34.56.78\".*$")
 
 # Output file, where the matched loglines will be copied to
-output_filename = os.path.normpath("output/parsed_lines.log")
+output_filename = os.path.normpath("test_log.log")
 # Overwrites the file, ensure we're starting out with a blank file
 with open(output_filename, "w") as out_file:
     out_file.write("")
