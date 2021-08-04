@@ -18,5 +18,5 @@ with open(output_filename, "a") as out_file:
         for line in in_file:
             # If log line matches our regex, print to console, and output file
             if (line_regex.search(line)):
-                print line
+                print(line)
                 out_file.write(line)
